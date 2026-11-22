@@ -175,6 +175,16 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:14px;color
  h1{font-size:40px}.ans{font-size:30px}.kpis .n{font-size:34px}
  .home-links{grid-template-columns:1fr 1fr}.home-links>button:nth-child(3){border-left:0;padding-left:0}
  .tl{grid-template-columns:repeat(3,1fr);row-gap:16px}
+ #home3d,#dev-view,#inv-view,#ten-view{height:72vw!important;min-height:280px;max-height:520px}
+ #buy-main{height:64vw!important;min-height:240px}
+ .row.main{display:flex!important;flex-direction:column}.row.main>div{display:block}
+ #dev .row.main>div:nth-child(2),#inv .row.main>div:nth-child(2),#ten .row.main>div:nth-child(2),#tender .row.main>div:nth-child(2),#buy .row.main>div:nth-child(2){order:-1}
+ #home .row.main>div:nth-child(2){order:-1;margin-bottom:20px}#home .home-links{margin-top:10px}#st-home{margin-bottom:22px}
+ #viewer .views{position:absolute}#viewer .views button{font-size:11px;padding:5px 7px}
+ #viewer .hint{display:none}
+ #viewer .dbar button{font-size:11px;padding:5px 6px}#viewer .dcap{white-space:normal;width:92%;font-size:11px;top:56px}
+ .head .sub{white-space:normal}.ans{white-space:normal}
+ table{font-size:13px}
 }
 </style></head><body>
 <header><div class="wrap"><div class="hdr"><div class="id"><b>Common Ground</b> &nbsp;/&nbsp; <span id="pgid">01 Home</span></div>
@@ -188,7 +198,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:14px;color
    <div><div class="lab" style="margin-bottom:1.4vh">One public plot · four people · one deal</div>
     <h1>Is redeveloping the AMTS Memnagar depot feasible, and on what terms?</h1>
     <p class="sub" style="margin-top:1.6vh">Assessing the feasibility of unlocking the AMTS Memnagar depot's land potential through a PPP</p>
-    <div class="status" id="st-home"></div></div>
+    </div>
    <div><div class="lab" style="color:var(--ink);font-weight:700;letter-spacing:.1em">What would you like to explore?</div>
    <div class="home-links" style="margin-top:1vh">
     <button data-go="buy"><span class="lab">02</span><b>Buy or rent</b><span class="sm">Shops, offices and co-living</span><span class="more">→</span></button>
@@ -216,7 +226,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:14px;color
 
 <!-- DEVELOPER -->
 <section id="dev">
- <div class="head"><div><div class="ans" id="dev-ans"></div><p class="sub">Best case: offices ₹8,800 a ft² · co-living ₹14,850 a bed · build ₹2,000 a ft² · ₹45 cr premium · 99 years</p></div><div class="status st"></div></div>
+ <div class="head"><div><div class="ans" id="dev-ans"></div><p class="sub">Best case: offices ₹8,800 a ft² · co-living ₹14,850 a bed · build ₹2,000 a ft² · ₹45 cr premium · 99 years</p></div></div>
  <div class="kpis" id="dev-k"></div>
  <div class="row main">
   <div style="grid-column:1/4" class="scrolly"><div class="lab" style="margin-bottom:1.6vh">Levers</div><div id="dev-lv"></div></div>
@@ -227,7 +237,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:14px;color
 
 <!-- INVESTOR -->
 <section id="inv">
- <div class="head"><div><div class="ans" id="inv-ans"></div><p class="sub">Buy the co-living, parking and ads from the developer once the building is running</p></div><div class="status st"></div></div>
+ <div class="head"><div><div class="ans" id="inv-ans"></div><p class="sub">Buy the co-living, parking and ads from the developer once the building is running</p></div></div>
  <div class="kpis" id="inv-k"></div>
  <div class="row main">
   <div style="grid-column:1/4" class="scrolly"><div class="lab" style="margin-bottom:1.6vh">Levers</div><div id="inv-lv"></div></div>
@@ -238,7 +248,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:14px;color
 
 <!-- TENDER -->
 <section id="tender">
- <div class="head"><div><div class="ans" id="ten-ans"></div><p class="sub" id="ten-sub"></p></div><div class="status st"></div></div>
+ <div class="head"><div><div class="ans" id="ten-ans"></div><p class="sub" id="ten-sub"></p></div></div>
  <div class="kpis" id="ten-k"></div>
  <div class="row main">
   <div style="grid-column:1/4" class="scrolly"><div class="lab" style="margin-bottom:1.6vh">Tender terms</div><div id="ten-lv"></div></div>
@@ -266,7 +276,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:14px;color
    <p class="sub" style="margin-top:16px">The AMTS bus depot at Memnagar sits on 9,078 m² of public land, 150 m from Gujarat University Metro. This project asks whether a private partner can rebuild the depot for free and pay the city for the land, by building shops, offices and co-living above it, and on what terms the deal works for everyone.</p>
    <p class="sub" style="margin-top:14px">A deal only happens if all four people say yes: the <b style="color:var(--ink)">authority</b> that owns the land, the <b style="color:var(--ink)">developer</b> who bids and builds, the <b style="color:var(--ink)">investor</b> who buys the finished building, and the <b style="color:var(--ink)">buyers and renters</b> who use it. Each page shows the deal through one of their eyes.</p>
    <h2 style="margin:40px 0 12px">How to use this site</h2>
-   <div class="list" style="border-top:1px solid var(--line)"><div><span>01</span>Pick a page: Buy or rent, Developer, Investor or Tender.</div><div><span>02</span>Read the green answer line at the top.</div><div><span>03</span>Move a lever and watch the answer and the deal check change.</div><div><span>04</span>Open How the money works to see why, step by step.</div></div>
+   <div class="list" style="border-top:1px solid var(--line)"><div><span>01</span>Pick a page: Buy or rent, Developer, Investor or Tender.</div><div><span>02</span>Read the green answer line at the top.</div><div><span>03</span>Move a lever and watch the answer and the numbers change.</div><div><span>04</span>Open How the money works to see why, step by step.</div></div>
    <h2 style="margin:40px 0 12px">Sources</h2>
    <div class="list" style="border-top:1px solid var(--line)"><div><span>—</span>Market prices and rents: primary survey, Ahmedabad, November 2026</div><div><span>—</span>FSI, setbacks and TOZ rules: CGDCR 2017</div><div><span>—</span>Land value: Jantri rates, Government of Gujarat</div><div><span>—</span>Cost of equity: CAPM with RBI risk-free rate and NSE market return</div><div><span>—</span>Site and building: SketchUp model of FP 70, Memnagar</div></div>
   </div>
@@ -2761,7 +2771,7 @@ const ASPHALT_URI = 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAZABkAAD/2wBDAAsH
     if (!window.THREE || !THREE.OrbitControls) return false;
     let renderer;
     try { renderer = new THREE.WebGLRenderer({ antialias: true }); } catch (e) { return false; }
-    renderer.setPixelRatio(Math.min(2, window.devicePixelRatio || 1));
+    renderer.setPixelRatio(Math.min(innerWidth < 800 ? 1.5 : 2, window.devicePixelRatio || 1));
     renderer.shadowMap.enabled = true; renderer.shadowMap.type = THREE.PCFSoftShadowMap; renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.15;
     host.insertBefore(renderer.domElement, host.firstChild);
     const scene = new THREE.Scene();
@@ -4139,7 +4149,7 @@ addEventListener('hashchange', () => show(location.hash.slice(1)));
 function update(full) {
  C = calc(S);
  $$('[data-vh]').forEach(e => { const d = LV[e.dataset.vh]; if (d && d.h) e.textContent = d.h(); });
- const st = statusHTML(C); $$('.status.st').forEach(e => e.innerHTML = st); $('#st-home').innerHTML = st;
+
  const keepFocus = document.activeElement && document.activeElement.dataset && document.activeElement.dataset.k;
  if (PG === 'buy') { if (full) renderBuy(); }
  if (PG === 'dev') full ? renderDev(C) : renderDevLight(C);
@@ -4153,7 +4163,7 @@ document.addEventListener('change', e => { if (e.target.dataset.k === 'fsi' && V
 show(location.hash.slice(1) || 'home');
 
 // ---------------- guide + exhibition mode ----------------
-const GUIDE = [['Pick who you are.', 'A buyer, a developer, an investor or the authority. Each page shows the deal through their eyes.'], ['Read the green line.', 'It answers the question for that person. Green means yes, amber means close, red means no.'], ['Move a lever.', 'The answer, the numbers and the deal check change straight away. How the money works explains why.']];
+const GUIDE = [['Pick who you are.', 'A buyer, a developer, an investor or the authority. Each page shows the deal through their eyes.'], ['Read the green line.', 'It answers the question for that person. Green means yes, amber means close, red means no.'], ['Move a lever.', 'The answer and the numbers change straight away. How the money works explains why.']];
 let gI = 0;
 function guideShow() { gI = 0; guideStep(); $('#guide').classList.add('on'); }
 function guideStep() { $('#g-n').textContent = (gI + 1) + ' of 3'; $('#g-t').textContent = GUIDE[gI][0]; $('#g-d').textContent = GUIDE[gI][1]; $('#g-next').textContent = gI < 2 ? 'Next' : 'Start exploring'; }
