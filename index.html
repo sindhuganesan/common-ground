@@ -168,7 +168,7 @@ td.r,th.r{text-align:right}td b{font-weight:700}
 #viewer .hint{font-size:12px}
 }
 .qual .qv{font-size:clamp(17px,2.5vh,24px);font-weight:700;color:var(--g);margin:.4vh 0 .3vh}.qual .sm{line-height:1.35}.qual{margin:1.4vh 0 1.4vh!important}
-.intro h1{font-size:clamp(26px,4vh,40px)!important;color:var(--g)}
+.intro h1{font-size:clamp(26px,4vh,40px)!important;color:var(--g)}.intro .sub{font-size:16px!important;color:var(--ink)!important;max-width:720px}
 footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:14px;color:var(--mute);display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
 @media(max-width:1000px){
  .wrap{padding:0 20px}.hdr{height:auto;flex-wrap:wrap;padding:12px 0}.hdr nav{margin:8px 0 0;overflow-x:auto;gap:18px;width:100%}.hdr nav button{height:40px;white-space:nowrap}
@@ -282,8 +282,7 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:14px;color
 <div class="intro">
  <div class="lab">Common Ground</div>
  <h1 style="margin:10px 0 6px"><span style="background:#EAF3EF;padding:0 8px">Dynamic Financial Feasibility Website</span></h1>
- <div style="font-size:18px;font-weight:700;color:var(--ink);margin-bottom:12px">One Plot | Four Stakeholders | One Financial Feasibility Website</div>
- <p class="sub" style="white-space:normal;line-height:1.55">This is an academic attempt to create a financial feasibility website that gives four stakeholders (buyers, developers, investors and the AMC) dynamic options to enter their own figures and see the financial benefits before investing in or leasing the property. The model has been prepared for a PPP project: the Bus Depot Redevelopment at a prime location near Helmet Circle, Navrangpura, Ahmedabad. Tabs and sliders keep it simple, so anyone can quickly check the financial feasibility for their own role.</p>
+ <p class="sub" style="white-space:normal;line-height:1.55;margin-top:10px">An academic tool for the PPP Bus Depot Redevelopment near Helmet Circle, Navrangpura, Ahmedabad. Buyers, developers, investors and the AMC can each test their own figures and see the financial benefits before investing or leasing.</p>
 </div>
    <h2 style="margin:40px 0 12px">How to use this site</h2>
    <div class="list" style="border-top:1px solid var(--line)"><div><span>01</span>Pick your role at the top: Buyers, Developers, Investors or AMC.</div><div><span>02</span>Read the green line: it answers the question for you.</div><div><span>03</span>Move a slider: the answer and the numbers change at once.</div><div><span>04</span>Open How the money works to see why, step by step.</div></div>
@@ -307,9 +306,8 @@ footer{border-top:1px solid var(--line);padding:28px 0 40px;font-size:14px;color
 <div class="lb" id="guide" style="background:rgba(20,20,20,.55)"><div class="intro" style="background:var(--bg);max-width:820px;width:94vw;padding:36px;max-height:92vh;overflow:auto"><div style="max-width:760px">
  <div class="lab">Common Ground</div>
  <h1 style="margin:10px 0 6px"><span style="background:#EAF3EF;padding:0 8px">Dynamic Financial Feasibility Website</span></h1>
- <div style="font-size:18px;font-weight:700;color:var(--ink);margin-bottom:12px">One Plot | Four Stakeholders | One Financial Feasibility Website</div>
- <p class="sub" style="white-space:normal;line-height:1.55">This is an academic attempt to create a financial feasibility website that gives four stakeholders (buyers, developers, investors and the AMC) dynamic options to enter their own figures and see the financial benefits before investing in or leasing the property. The model has been prepared for a PPP project: the Bus Depot Redevelopment at a prime location near Helmet Circle, Navrangpura, Ahmedabad. Tabs and sliders keep it simple, so anyone can quickly check the financial feasibility for their own role.</p>
-</div><div class="list" style="margin-top:16px;border-top:1px solid var(--line)"><div><span>01</span>Pick your role at the top: Buyers, Developers, Investors or AMC.</div><div><span>02</span>Read the green line: it answers the question for you.</div><div><span>03</span>Move a slider: the answer and the numbers change at once.</div><div><span>04</span>Open How the money works to see why, step by step.</div></div><div style="display:flex;gap:12px;margin-top:22px;align-items:center"><span class="btn" id="g-next">Start exploring</span><button class="sm" id="g-skip">Skip</button></div></div></div></div>
+ <p class="sub" style="white-space:normal;line-height:1.55;margin-top:10px">An academic tool for the PPP Bus Depot Redevelopment near Helmet Circle, Navrangpura, Ahmedabad. Buyers, developers, investors and the AMC can each test their own figures and see the financial benefits before investing or leasing.</p>
+</div><div id="g-how" style="display:none"><div class="lab" style="margin-top:4px">How to use</div><div class="list" style="margin-top:10px;border-top:1px solid var(--line)"><div><span>01</span>Pick your role at the top: Buyers, Developers, Investors or AMC.</div><div><span>02</span>Read the green line: it answers the question for you.</div><div><span>03</span>Move a slider: the answer and the numbers change at once.</div><div><span>04</span>Open How the money works to see why, step by step.</div></div></div><div style="display:flex;gap:12px;margin-top:22px;align-items:center"><span class="btn" id="g-next">Next: how to use →</span><button class="sm" id="g-skip">Skip</button></div></div></div></div>
 <div id="v3store" style="display:none"><div id="viewer"><div class="views"><button data-view="3d">Aerial</button><button data-view="street">Street</button><button data-view="entry">Bus entry</button><button data-view="rear">Depot yard</button><button id="layersBtn">Concept</button><button data-view="depot">Inside depot</button><button data-view="gf">GF plan</button><button data-view="top">Top</button></div><button id="nightBtn" class="nightb">Night view</button><div class="hint">Drag to rotate · scroll to zoom</div><div class="dbar" id="dbar" style="display:none"></div><div class="dcap" id="dcap" style="display:none"></div></div></div>
 <div class="pop" id="pop" style="display:none"></div>
 <div class="lb" id="lb"><img id="lbimg" alt=""><div class="bar"><button id="lbp">‹</button><span id="lbc"></span><button id="lbn">›</button><button id="lbx" style="font-size:16px">Close ✕</button></div></div>
@@ -4187,9 +4185,9 @@ document.addEventListener('change', e => { if (e.target.dataset.k === 'fsi' && V
 show(location.hash.slice(1) || 'home');
 
 // ---------------- guide + exhibition mode ----------------
-function guideShow() { $('#guide').classList.add('on'); }
+let gStep = 0; function guideShow() { gStep = 0; $('#g-how').style.display = 'none'; document.querySelector('#guide .intro > div:first-child').style.display = ''; $('#g-next').textContent = 'Next: how to use →'; $('#guide').classList.add('on'); }
 function guideEnd() { $('#guide').classList.remove('on'); try { localStorage.setItem('cg-guide', '1'); } catch (e) { } }
-$('#g-next').onclick = guideEnd; $('#g-skip').onclick = guideEnd;
+$('#g-next').onclick = () => { if (gStep === 0) { gStep = 1; document.querySelector('#guide .intro > div:first-child').style.display = 'none'; $('#g-how').style.display = ''; $('#g-next').textContent = 'Start exploring'; } else guideEnd(); }; $('#g-skip').onclick = guideEnd;
 let KIOSK = false; try { KIOSK = localStorage.getItem('cg-kiosk') === '1'; } catch (e) { }
 function kioskLabel() { $('#kiosk').textContent = KIOSK ? 'Exhibition mode is on · turn off' : 'Turn on exhibition mode'; }
 $('#kiosk').onclick = () => { KIOSK = !KIOSK; try { localStorage.setItem('cg-kiosk', KIOSK ? '1' : '0'); } catch (e) { } kioskLabel(); };
